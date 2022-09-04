@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Radio+Canada:wght@500&family=Updock&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <title>Weather Dashboard</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <header>
+      <box class="titleBox d-flex align-items-center justify-content-center">
+        <h1>Weather Dashboard</h1>
+      </box>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <searchbar class="col-2">
+          <textarea class="form-control searchBoxInput d-flex justify-content-center m-3" rows="1" placeholder="Irvine"></textarea>
+          <button type="button" class="btn btn-primary searchBtn m-3 btn-block">Search</button>
+        </searchbar>
+        <cityCard class="col-8 m-3">
+            <div class="jumbotron cityCard">
+              <h1 class="display-6 liveCity">Beaumont, California</h1>
+              <h2 class="display-6 liveDate">Beaumont 02-10-1970)</h2>
+              <img class="liveCityIcon" src="" alt="Current Weather Icon" style="width: 100px; margin:20px;">
+              <p class="lead liveCityTemp m-2">Temp: </p>
+              <p class="lead liveCityWind m-2">Wind: </p>
+              <p class="lead liveCityHumidity m-2">Humidity: </p>
+              <p class="lead liveCityUVindex m-2">UV Index: </p>
+            </div>
+        </cityCard>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col fiveDayText d-flex align-items-center justify-content-center">
+          <h1>5-Day Forecast </h1>
+        </div>
+      </div>
+      <div class="row justify-content-space-center">
+        <div class="col m-1">
+          <ul class="searchHistoryList">
+            <li class="searchHistory m-2 text-align-center"><h1>Search History</h1></li>
+            <li class="card-body cityButtonShadow text-center p-3 m-2 cityButton cityButton1">Austin</li>
+            <li class="card-body cityButtonShadow text-center p-2 m-2 cityButton cityButton2">Dallas</li>
+            <li class="card-body cityButtonShadow text-center p-2 m-2 cityButton cityButton3">Dallas</li>
+            <li class="card-body cityButtonShadow text-center p-2 m-2 cityButton cityButton4">Dallas</li>
+            <li class="card-body cityButtonShadow text-center p-2 m-2 cityButton cityButton5">Dallas</li>
+          </ul>
+        </div>
+          <div class="col">
+            <div class="card forecastCard" style="width: 11rem; height: 20rem;">
+              <div class="card-body">
+                <h4 class="forecastCard1CityDate text-center">Forecast Date</h4>
+                <img class="day1Icon mx-auto d-block" src="" alt="Current Weather Icon" style="width: 50px; margin:20px;">
+                <p class="card-text mt-5 mx-0 day1ForeTemp dayForeTemp">Temp: </p>
+                <p class="card-text mt-3 mx-1 day1ForeWind">Wind: </p>
+                <p class="card-text m-3 day1ForeHumidity">Humidity: </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card forecastCard" style="width: 11rem; height: 20rem;">
+              <div class="card-body">
+                <h4 class="forecastCard2CityDate text-center">Forecast Date</h4>
+                <img class="day2Icon mx-auto d-block" src="" alt="Current Weather Icon" style="width: 50px; margin:20px;">
+                <p class="card-text mt-5 mx-0 day2ForeTemp dayForeTemp">Temp: </p>
+                <p class="card-text mt-3 mx-1 day2ForeWind">Wind: </p>
+                <p class="card-text m-3 day2ForeHumidity">Humidity: </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card forecastCard" style="width: 11rem; height: 20rem;">
+              <div class="card-body">
+                <h4 class="forecastCard3CityDate text-center">Forecast Date</h4>
+                <img class="day3Icon mx-auto d-block" src="" alt="Current Weather Icon" style="width: 50px; margin:20px;">
+                <p class="card-text mt-5 mx-0 day3ForeTemp dayForeTemp">Temp: </p>
+                <p class="card-text mt-3 mx-1 day3ForeWind">Wind: </p>
+                <p class="card-text m-3 day3ForeHumidity">Humidity: </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card forecastCard" style="width: 11rem; height: 20rem;">
+              <div class="card-body">
+                <h4 class="forecastCard4CityDate text-center">Forecast Date</h4>
+                <img class="day4Icon mx-auto d-block dayForeTemp" src="" alt="Current Weather Icon" style="width: 50px; margin:20px;">
+                <p class="card-text mt-5 mx-0 day4ForeTemp">Temp: </p>
+                <p class="card-text mt-3 mx-1 day4ForeWind">Wind: </p>
+                <p class="card-text m-3 day4ForeHumidity">Humidity: </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card forecastCard p-0" style="width: 11rem; height: 20rem;">
+              <div class="card-body">
+                <h4 class="forecastCard5CityDate text-center">Forecast Date</h4>
+                <img class="day5Icon mx-auto d-block" src="" alt="Current Weather Icon" style="width: 50px; margin:20px;">
+                <p class="card-text mt-5 mx-0 day5ForeTemp dayForeTemp">Temp: </p>
+                <p class="card-text mt-3 mx-1 day5ForeWind">Wind: </p>
+                <p class="card-text m-3 day5ForeHumidity">Humidity: </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
+  
+</body>
+
+</html>

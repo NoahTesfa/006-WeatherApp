@@ -1,0 +1,114 @@
+:root {
+  --main-bg-color: #820000a1;
+  --forecastDaysBG: #44b9e3;
+  --cityCardBorder: #090909;
+  
+  --fiveDayText: rgb(0, 0, 0);
+
+  --fadeStart:#c33b3b;
+  --fadeEnd:#490092;
+
+  --fiveDayTextBGStart:#810808aa;
+  --fiveDayTextBG:#1972c6;
+}
+
+body {
+  font-family: 'Trebuchet MS';
+  line-height: 1;
+  background-color: var(--main-bg-color);
+}
+
+div h4 {
+  font-size: 20px;
+}
+
+.titleBox {
+  display: flex;
+  background: linear-gradient(to right,var(--fadeStart),var(--fadeEnd));
+  min-height: 80px;
+  align-items: center;
+  font-size: 50px;
+  padding: 20px;
+  width: 100%;
+  font-family: 'Trebuchet MS';
+}
+
+
+.cityButton {
+  background: linear-gradient(to right, var(--fadeStart),var(--fadeEnd));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80px;
+  font-size: 22px;
+  width: 160px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  font-family: 'Trebuchet MS';
+}
+
+.liveDate {
+  font-size: 30px;
+}
+
+.liveCity {
+  font-size: 50px;
+}
+
+.dayForeTemp {
+  font-size: 13px;
+}
+
+.cityCard {
+  border-style: solid;
+  border-radius: 12px;
+  min-width: 80%;
+  outline-color: var(--cityCardBorder);
+  font-family: 'Trebuchet MS';
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+
+.searchHistory {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 80px;
+  font-size: 25px;
+  width: 160px;
+  font-family: 'Trebuchet MS';
+  color: var(--fiveDayText);
+}
+
+
+.forecastCard {
+  font-size: 14px;
+  font-weight: 800;
+  background: linear-gradient(to right top, var(--fadeStart),var(--fadeEnd));
+  font-family: 'Trebuchet MS';
+}
+
+
+.fiveDayText {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  background: linear-gradient(to top,var(--fiveDayTextBGStart),var(--fiveDayTextBG));
+  text-align: center;
+  min-height: 50px;
+  min-width: 80%;
+  color: var(--fiveDayText);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  font-family: 'Trebuchet MS';
+}
